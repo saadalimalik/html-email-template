@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Brigadier</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      html {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        line-height: 1.5;
+      }
+
+      /* Hero Section */
+      .hero {
+        width: 29%;
+        margin-inline: auto;
+        margin-block: 4rem;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Hero Section end */
+
+      /* Main Section */
+      main {
+        padding-inline: 5rem;
+      }
+
+      main .message h2 {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      main .message {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block: 2rem;
+      }
+
+      /* Flyer */
+      .flyer {
+        display: flex;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: #8436f71a;
+        padding: 2rem 2rem 3rem;
+        margin-block: 3rem;
+      }
+
+      .flyer > *:first-child {
+        flex: 2;
+      }
+
+      .flyer > div:last-child {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flyer > div:last-child img {
+        width: 80%;
+      }
+
+      .flyer h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+      }
+
+      .flyer ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .flyer ul li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .flyer ul li span:has(> img) {
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Flyer end */
+
+      /* Regards */
+      .regards {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .regards span:not(:first-child) {
+        color: #8436f7;
+      }
+      /* Regards end */
+
+      /* Promo */
+      .promo {
+        display: flex;
+        height: 40rem;
+        margin-block: 3rem;
+      }
+
+      .promo > * {
+        flex: 1;
+        background-image: url('./assets/images/promo.jpeg');
+        background-repeat: no-repeat;
+        background-size: 200%;
+      }
+
+      .promo > *:first-child {
+        background-position: 0 80%;
+      }
+
+      .promo > *:last-child {
+        background-position: 100% 60%;
+        background-size: 192%;
+      }
+      /* Promo end */
+      /* Main Section end */
+
+      /* Footer */
+      footer {
+        padding-inline: 2rem;
+      }
+
+      /* Socials */
+      footer .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding-block: 1rem;
+        border-block: 1px solid #5959594d;
+      }
+      /* Socials end */
+
+      /* Copyrights */
+      footer .copyrights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 2rem;
+        color: #262626;
+      }
+      /* Copyrights end */
+
+      /* Footer end */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <img src="./assets/images/brand.png" alt="logo" />
+      </div>
+    </header>
+
+    <main>
+      <section class="email">
+        <article class="message">
+          <h2>Dear Abdullah</h2>
+          <p>
+            We are excited to confirm your booking with us at Home Brigadier
+            Technical services! Thank you for choosing our services.
+          </p>
+        </article>
+
+        <section class="flyer">
+          <div>
+            <h1>Booking Details</h1>
+
+            <ul>
+              <li>
+                <span>
+                  <img src="./assets/icons/date.svg" alt="date" />
+                </span>
+                <span>Date: 23/04/2024</span>
+              </li>
+
+              <li>
+                <span>
+                  <img src="./assets/icons/clock.svg" alt="time" />
+                </span>
+                <span>Time: 10:00am to 12:00pm</span>
+              </li>
+
+              <li>
+                <span>
+                  <img src="./assets/icons/pin-drop.svg" alt="location" />
+                </span>
+                <span>Location: Burj al arab, Dubai</span>
+              </li>
+
+              <li>
+                <span>
+                  <img src="./assets/icons/services.svg" alt="services" />
+                </span>
+                <span>Services: Cleaning (Home+Washroom)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <img src="./assets/images/booking-section.png" alt="booking" />
+          </div>
+        </section>
+
+        <article class="message">
+          <h2>Additional Notes</h2>
+          <p>
+            The app offers a convenient way to book services, track service
+            providers, and manage payments. Users can also rate and review
+            service providers to help others make informed decisions.
+          </p>
+          <p>
+            If you have any questions or need to make changes to your booking,
+            please feel free to contact us at
+          </p>
+          <p>
+            We look forward to serving you and providing an exceptional
+            experience. Thank you for trusting us with your Cleaning service
+            needs.
+          </p>
+        </article>
+
+        <article class="regards">
+          <span>Best regards,</span> <span>Manager,</span>
+          <span>Home Brigader Technical Services.</span>
+        </article>
+      </section>
+
+      <section class="promo">
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="socials">
+        <a href="">
+          <img src="./assets/icons/fb.svg" alt="fb" />
+        </a>
+        <a href="">
+          <img src="./assets/icons/insta.svg" alt="insta" />
+        </a>
+      </div>
+
+      <div class="copyrights">
+        <span>&copy; 2024 Home brigadier. All rights reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
